@@ -9,10 +9,6 @@ addBtn.addEventListener("click",addItems);
 todolist.addEventListener("click",deletecheck);
 filteroption.addEventListener("click",filtertodo);
 
-
-
-
-
 //FUNCTIONS
 
 function addItems(e){
