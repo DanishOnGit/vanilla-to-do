@@ -35,5 +35,18 @@ function addItems(e){
     input.value=""
 }
 function deletecheck(e){
-    console.log(e.target)
+    const item=e.target
+   
+    if(item.classList[0]==="delete-Btn"){
+    const toDo=item.parentNode;
+
+    toDo.classList.add("fall")
+    toDo.addEventListener("transitionend", ()=> toDo.remove())
+   
+    }
+
+    if(item.classList[0]==="completed-Btn"){
+
+        item.parentNode.classList.toggle("completed");
+    }
 }

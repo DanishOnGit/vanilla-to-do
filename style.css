@@ -14,6 +14,21 @@ header,form{
     justify-content: center;
     align-items: center;
 }
+form input, form button{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+form button{
+    background-color:white;
+    color:  rgb(13, 47, 141);
+    transition: 300ms ease;
+}
+form button:hover{
+    color: white;
+    background: rgb(13, 47, 141);
+    
+}
 .outputDiv{
     display: flex;
     justify-content:center;
@@ -31,6 +46,7 @@ header,form{
     color: black;
     display: flex;
     align-items: center;
+    transition: 500ms ease;
 }
 .toDo li{
     flex: 1;
@@ -46,4 +62,15 @@ header,form{
 .completed-Btn{
     border-right: 2px solid white;
     background-color: yellowgreen;
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
 }
