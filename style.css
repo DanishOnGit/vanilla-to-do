@@ -14,4 +14,36 @@ header,form{
     justify-content: center;
     align-items: center;
 }
-
+.outputDiv{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.toDoList{
+    min-width: 30%;
+    /* background-color: white; */
+    list-style: none;
+}
+.toDo{
+    background-color: white;
+    margin: 0.5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.toDo li{
+    flex: 1;
+    padding: 0 0.5rem;
+}
+.delete-Btn,.completed-Btn{
+    background: rgb(233, 51, 19);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.completed-Btn{
+    border-right: 2px solid white;
+    background-color: yellowgreen;
+}
