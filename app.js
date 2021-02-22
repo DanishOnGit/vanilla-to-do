@@ -1,7 +1,7 @@
-let input=document.querySelector(".toDoInput")
-let addBtn=document.querySelector(".toDoBtn")
-let todolist=document.querySelector(".toDoList")
-let filteroption=document.querySelector(".filter-todo")
+const input=document.querySelector(".toDoInput")
+const addBtn=document.querySelector(".toDoBtn")
+const todolist=document.querySelector(".toDoList")
+const filteroption=document.querySelector(".filter-todo")
 
 //EVENT LISTENERS
 document.addEventListener("DOMContentLoaded",getToDos);
